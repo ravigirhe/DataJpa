@@ -1,0 +1,5 @@
+package com.sdj.repositories;
+
+public interface AddressRepository {
+
+}

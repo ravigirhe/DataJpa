@@ -1,0 +1,21 @@
+package com.sdj.service;
+
+
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
+import com.sdj.entity.Address;
+import com.sdj.repositories.AddressRepository;
+
+@Service
+public class AccountService {
+	@Autowired
+private AddressRepository addressRepository;
+@Transactional(readOnly=true)
+	public Address getAddress(int addressNo) {
+		return addressRepository.findById(addressNo).get();
+	}
+
+}

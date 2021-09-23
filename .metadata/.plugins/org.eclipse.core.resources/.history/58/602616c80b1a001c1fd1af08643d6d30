@@ -1,0 +1,5 @@
+package com.sdj.entity;
+
+public class Address {
+
+}

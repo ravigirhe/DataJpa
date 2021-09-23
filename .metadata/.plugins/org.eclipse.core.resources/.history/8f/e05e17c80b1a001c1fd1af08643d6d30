@@ -1,0 +1,5 @@
+package com.sdj.config;
+
+public class ServiceConfig {
+
+}
